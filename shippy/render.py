@@ -11,8 +11,8 @@ def render_once(color):
     f = open('out/tmp.pov', 'w')
     f.write(s)
     f.close()
-    os.system('povray shippy.ini tmp.pov -Oout/out')
+
+    os.system('povray shippy.ini out/tmp.pov -Oout/out')
     os.remove('out/tmp.pov')
 
 render_once('<0,0,1>')
-
