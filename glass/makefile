@@ -1,7 +1,7 @@
 
-run: glass.png
+run: makefile glass.png
 	open glass.png
 
-glass.png: glass.pov mylathe.pov
-	povray glass.pov
+glass.png: makefile glass.pov mylathe.pov
+	povray +H400 +W400 glass.pov
 
