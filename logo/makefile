@@ -2,5 +2,5 @@
 run: makefile logo.png
 	open logo.png
 
-logo.png: logo.pov
+logo.png: makefile logo.pov
 	povray +A logo.pov
