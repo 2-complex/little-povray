@@ -1,0 +1,6 @@
+dice.png
+:
+dice.pov
+:
+povray +A +H720 +W1280 dice.pov
+:
