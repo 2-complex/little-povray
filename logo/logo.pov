@@ -7,5 +7,3 @@ rgb 1.3area_light 8*x,8*y,8,
 4pigment{color rgb 1}}sphere
 {0, 2 pigment{ color rgb 1 }
 translate 5*z}
-
-
