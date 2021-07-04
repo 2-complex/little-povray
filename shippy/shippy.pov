@@ -2,8 +2,8 @@
 #declare background_color = BACKGROUND_COLOR;
 #declare shape_on = SHAPE_ON;
 
-//#declare background_color = <1,0,0>;
-//#declare shape_on = 1;
+// #declare background_color = <1,0,0>;
+// #declare shape_on = 1;
 
 
 
@@ -34,21 +34,21 @@ light_source {
 cone {
 	<0,0,0>, 1
 	<0,0,1.4>, 0
-	
+
 	scale 0.1
 	rotate 90*y
 	translate 0.1*x
-	
+
 	pigment{ color rgb 8*<1,0.5,0> }
 }
 
 // Windhsield
 sphere {
 	<0,0,0> 0.2
-	
+
 	scale 0.25
 	scale 3*x + 0.6*z
-	
+
 	finish {phong .4}
 	pigment{color rgb 1.1*<1,0,1>}
 	translate 1.05 * z + -0.1*x
@@ -58,16 +58,16 @@ sphere {
 difference {
 	sphere {
 		<0,0,0> 0.2
-		
+
 		scale 0.5
 		scale x*3 + 0.5*z
 	}
-	
+
 	plane {
 		-x 0
 		translate 0.1*x
 	}
-	
+
 	finish {phong .4}
 	pigment{color rgb 1.1*<1,1,1>}
 	translate 1.0 * z
@@ -77,18 +77,18 @@ difference {
 difference {
 	sphere {
 		<0,0,0> 0.2
-		
+
 		scale 0.5
 		scale x*3 + 0.5*z + 2.5*y
 	}
-	
+
 	plane {
 		-x 0
 		translate -0.1*x
 	}
-	
+
 	translate 0.17*x
-	
+
 	finish {phong .4}
 	pigment{color rgb 1.1*<1,1,1>}
 	translate 1.0 * z
@@ -103,11 +103,11 @@ difference {
 
 plane {
 	z 0
-	
+
 	texture {
 		pigment {color rgb background_color}
 	}
-	
+
 	translate -6
 }
 
