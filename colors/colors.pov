@@ -33,14 +33,11 @@ union {
 	#local i = 0;
 	#while(i < n)
 	superellipsoid {
-    	<.2, .2>
-    	
+		<.2, .2>
 		#local theta = i*360/n;
-		
 		scale 0.5
 		translate 1.6*x - 0.5*z
 		rotate theta*z
-		
 		pigment{color rgb 0.9*vnormalize(1.2*vaxis_rotate(x+y, <1,1,1>, theta))}
 		finish {specular 0.1 phong .2 phong_size 12 metallic 1 reflection{0.9 metallic 0.9}}
 	}

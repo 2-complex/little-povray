@@ -1,0 +1,6 @@
+look_at.png
+:
+look_at.pov
+:
+povray +A +H720 +W1280 look_at.pov
+:

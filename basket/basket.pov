@@ -12,16 +12,16 @@ background {Black}
 plane{ y, 0 texture{pigment{color rgb <0.25,0.3,0.25>} normal{granite .1 scale <0.3,0.3,0.3>}} }
 
 light_source {
-    3*<1, 3, -3>
+    3*<1, 4, -5>
     color rgb 1.5*White
-    area_light x, z, 5, 5
+    area_light x, z, 10, 10
     jitter
 }
 
 
 
 #declare R = 0.01;
-#declare lsteps = 40000;
+#declare lsteps = 80000;
 #declare isteps = 1000;
 #declare jsteps = 41;
 #declare rows = 30;

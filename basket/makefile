@@ -1,4 +1,4 @@
 
-basket.png: basket.pov
-	povray +A +H600 +W800 basket.pov
+basket.png: makefile basket.pov
+	povray +A +W1280 +H720 basket.pov
 
